@@ -1,0 +1,36 @@
+libguigtk_a-guigtk-outdev-pixmap.o: guigtk-outdev-pixmap.c \
+ /usr/include/stdc-predef.h ../include/tools/bitmap.h \
+ ../include/tools/bitmap-types.h ../include/tools/CPLUSPLUS.h \
+ ../include/tools/base-types.h ../include/tools/set-header-template.h \
+ ../include/vgui/vgui-pixmap.h ../include/vgui/vgui-CPLUSPLUS.h \
+ ../include/vgui/vgui-types.h ../include/tools/base-types.h \
+ ../include/tools/color-types.h ../include/tools/CPLUSPLUS.h \
+ ../include/tools/bitmap-types.h ../include/outdev/types.h
+
+/usr/include/stdc-predef.h:
+
+../include/tools/bitmap.h:
+
+../include/tools/bitmap-types.h:
+
+../include/tools/CPLUSPLUS.h:
+
+../include/tools/base-types.h:
+
+../include/tools/set-header-template.h:
+
+../include/vgui/vgui-pixmap.h:
+
+../include/vgui/vgui-CPLUSPLUS.h:
+
+../include/vgui/vgui-types.h:
+
+../include/tools/base-types.h:
+
+../include/tools/color-types.h:
+
+../include/tools/CPLUSPLUS.h:
+
+../include/tools/bitmap-types.h:
+
+../include/outdev/types.h:

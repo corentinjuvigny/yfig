@@ -1,0 +1,66 @@
+dnl #=========================================================================
+dnl # Copyright 2017 Ivan Augé
+dnl #
+dnl # This file is part of the YFIG software.
+dnl # 
+dnl # YFIG is free  software;  you  can redistribute it and/or modify it
+dnl # under the terms of the GNU  General Public License as published by
+dnl # the  Free Software Foundation; either version 3 of the License, or
+dnl # (at your option) any later version.
+dnl # 
+dnl # YFIG software is distributed  in the  hope that it will be useful,
+dnl # but WITHOUT ANY WARRANTY;  without even the  implied  warranty  of
+dnl # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See  the GNU
+dnl # General Public License for more details.
+dnl # 
+dnl # You should have received  a copy of the GNU General Public License
+dnl # along with YFIG. If not, see <http://www.gnu.org/licenses/>.
+dnl #=========================================================================
+dnl # $Software: YFIG
+dnl #       $Id: gtk3-check.ac 374 2018-12-01 13:56:19Z ia $
+dnl #  $HeadURL: http://lunix120.ensiie.fr/yfig/trunk/config.ac/gtk3-check.ac $
+dnl #   $Author: Ivan Auge (Email: auge@ensiie.fr)
+dnl #=========================================================================
+
+dnl # ####################################################################
+dnl # some checks for the GTK+-3.0 package
+dnl # ####################################################################
+
+GTK3_MinVers="3.22"
+
+# set GTK3_CFLAGS and GTK3_LIBS if needed
+GTK3_AVAILABLE=0
+PKG_CHECK_MODULES(GTK3,[gtk+-3.0 >= $GTK3_MinVers],[GTK3_AVAILABLE=1]) 
+
+# check GTK+-3.0 includes and set them into GTK3_INCLUDES
+if test $GTK3_AVAILABLE = 1 ; then
+    files="gdk/gdk.h"
+    files="$files gtk/gtk.h"
+    CPPFLAGS_save="$CPPFLAGS"
+    CPPFLAGS="$CPPFLAGS $GTK3_CFLAGS"
+    AC_CHECK_HEADERS($files,,[GTK3_AVAILABLE=0])
+    CPPFLAGS="$CPPFLAGS_save"
+    for f in $files ; do
+        GTK3_INCLUDES="$GTK3_INCLUDES
+#include <$f>"
+    done
+fi
+
+dnl # check GTK+-3.0 main types, functions and libraries
+if test $GTK3_AVAILABLE = 1 ; then
+    CPPFLAGS_save="$CPPFLAGS"
+    LIBS_save="$LIBS"
+    CPPFLAGS="$CPPFLAGS $GTK3_CFLAGS"
+    LIBS="$GTK3_LIBS $X11_LIBS $LIB"
+    funcs="gdk_display_get_n_monitors"
+    funcs="$funcs gdk_display_get_monitor"
+    funcs="$funcs gdk_monitor_get_geometry"
+    funcs="$funcs gdk_pango_context_get_for_display"
+    AC_CHECK_FUNCS([$funcs],,[GTK3_AVAILABLE=0])
+    CPPFLAGS="$CPPFLAGS_save"
+    LIBS="$LIBS_save"
+fi
+
+dnl # ####################################################################
+dnl # vim: set syntax=config:
+dnl # ####################################################################

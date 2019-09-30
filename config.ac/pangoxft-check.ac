@@ -1,0 +1,79 @@
+dnl #=========================================================================
+dnl # Copyright 2017 Ivan Augé
+dnl #
+dnl # This file is part of the YFIG software.
+dnl # 
+dnl # YFIG is free  software;  you  can redistribute it and/or modify it
+dnl # under the terms of the GNU  General Public License as published by
+dnl # the  Free Software Foundation; either version 3 of the License, or
+dnl # (at your option) any later version.
+dnl # 
+dnl # YFIG software is distributed  in the  hope that it will be useful,
+dnl # but WITHOUT ANY WARRANTY;  without even the  implied  warranty  of
+dnl # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See  the GNU
+dnl # General Public License for more details.
+dnl # 
+dnl # You should have received  a copy of the GNU General Public License
+dnl # along with YFIG. If not, see <http://www.gnu.org/licenses/>.
+dnl #=========================================================================
+dnl # $Software: YFIG
+dnl #       $Id: pangoxft-check.ac 213 2018-06-13 09:12:50Z ia $
+dnl #  $HeadURL: http://lunix120.ensiie.fr/yfig/trunk/config.ac/pangoxft-check.ac $
+dnl #   $Author: Ivan Auge (Email: auge@ensiie.fr)
+dnl #=========================================================================
+
+dnl # ####################################################################
+dnl # some checks for the pangoxft package
+dnl # ####################################################################
+
+XFT_MinVers="2.3.2"
+PANGOXFT_MinVers="1.38"
+
+# set PANGOXFT_CFLAGS and PANGOXFT_LIBS if needed
+PANGOXFT=0
+#if test $gen_yfig_xt != no -a $gen_yfig_xt != disabled \
+#     -a $gen_yfig_xt_with_pango = yes ; then
+    PKG_CHECK_MODULES([PANGOXFT],
+            [pangoxft >= $PANGOXFT_MinVers xft >= $XFT_MinVers],
+            [PANGOXFT=1],[gen_yfig_xt_with_pango=no]) 
+#fi
+
+# check pang-xft includes and set them into PANGOXFT_INCLUDES
+#if test $gen_yfig_xt != no -a $gen_yfig_xt != disabled \
+#     -a $gen_yfig_xt_with_pango = yes ; then
+if test $PANGOXFT = 1 ; then
+    files=""
+    files="$files X11/Xft/Xft.h"
+    files="$files pango/pangoxft.h"
+    files="$files pango/pangoft2.h"
+
+    CPPFLAGS_save="$CPPFLAGS"
+    CPPFLAGS="$CPPFLAGS $PANGOXFT_CFLAGS"
+    AC_CHECK_HEADERS($files,,[PANGOXFT=0])
+    CPPFLAGS="$CPPFLAGS_save"
+    for f in $files ; do
+        PANGOXFT_INCLUDES="$PANGOXFT_INCLUDES
+#include <$f>"
+    done
+fi
+#fi
+
+# check pango-xft main types, functions and libraries
+#if test $gen_yfig_xt != no -a $gen_yfig_xt != disabled \
+#     -a $gen_yfig_xt_with_pango = yes ; then
+if test $PANGOXFT = 1 ; then
+    CPPFLAGS_save="$CPPFLAGS"
+    LIBS_save="$LIBS"
+    CPPFLAGS="$CPPFLAGS $PANGOXFT_CFLAGS"
+    LIBS="$PANGOXFT_LIBS $X11_LIBS $LIB"
+    funcs="XftColorAllocValue XftDrawCreate pango_context_set_matrix"
+    funcs="$funcs pango_xft_get_font_map pango_xft_render_layout"
+    AC_CHECK_FUNCS([$funcs],,[PANGOXFT=0])
+    CPPFLAGS="$CPPFLAGS_save"
+    LIBS="$LIBS_save"
+fi
+#fi
+
+dnl # ####################################################################
+dnl # vim: set syntax=config:
+dnl # ####################################################################

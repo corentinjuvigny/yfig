@@ -1,0 +1,69 @@
+dnl #=========================================================================
+dnl # Copyright 2017 Ivan Augé
+dnl #
+dnl # This file is part of the YFIG software.
+dnl # 
+dnl # YFIG is free  software;  you  can redistribute it and/or modify it
+dnl # under the terms of the GNU  General Public License as published by
+dnl # the  Free Software Foundation; either version 3 of the License, or
+dnl # (at your option) any later version.
+dnl # 
+dnl # YFIG software is distributed  in the  hope that it will be useful,
+dnl # but WITHOUT ANY WARRANTY;  without even the  implied  warranty  of
+dnl # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See  the GNU
+dnl # General Public License for more details.
+dnl # 
+dnl # You should have received  a copy of the GNU General Public License
+dnl # along with YFIG. If not, see <http://www.gnu.org/licenses/>.
+dnl #=========================================================================
+dnl # $Software: YFIG
+dnl #       $Id: mingw-check.ac 220 2018-06-14 07:32:20Z ia $
+dnl #  $HeadURL: http://lunix120.ensiie.fr/yfig/trunk/config.ac/mingw-check.ac $
+dnl #   $Author: Ivan Auge (Email: auge@ensiie.fr)
+dnl #=========================================================================
+
+dnl # ####################################################################
+dnl # some checks for the WIN32 under MinGw environment.
+dnl # ####################################################################
+
+MINGW_AVAILABLE=0; test $tos_mingw = 1 && MINGW_AVAILABLE=1
+
+# check WIN32 includes and set them into WIN32_INCLUDES
+if test $MINGW_AVAILABLE = 1 ; then
+    files="windows.h"
+    files="$files windef.h"
+    files="$files objidl.h"
+    files="$files winuser.h"
+    files="$files gdiplus.h"
+    files="$files vsstyle.h"
+    files="$files commctrl.h"
+    CPPFLAGS_save="$CPPFLAGS"
+    CPPFLAGS="$CPPFLAGS $MINGW_CFLAGS"
+    AC_CHECK_HEADERS($files,,[MINGW_AVAILABLE=0],[
+$ac_includes_default
+#include <windows.h>
+])
+    CPPFLAGS="$CPPFLAGS_save"
+    for f in $files ; do
+        WIN32_INCLUDES="$WIN32_INCLUDES
+#include <$f>"
+    done
+fi
+
+dnl # check WIN32 main types, functions and libraries
+dnl if test $MINGW_AVAILABLE = 1 ; then
+dnl     CPPFLAGS_save="$CPPFLAGS"
+dnl     LIBS_save="$LIBS"
+dnl     CPPFLAGS="$CPPFLAGS $MINGW_CFLAGS"
+dnl     LIBS="$MINGW_LIBS $LIBS"
+dnl     funcs="..."
+dnl     funcs="$funcs ..."
+dnl     AC_CHECK_FUNCS([$funcs],,[MINGW_AVAILABLE=0])
+dnl     CPPFLAGS="$CPPFLAGS_save"
+dnl     LIBS="$LIBS_save"
+dnl fi
+
+dnl # ####################################################################
+dnl # vim: set syntax=config:
+dnl # ####################################################################
+

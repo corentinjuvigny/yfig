@@ -1,0 +1,30 @@
+TODO:
+ia  1. dialog edit segfault sur certains objets (carré)
+cj  2. un site WEB YFIG pour sa distribution (choisir où)
+ia  3. les boutons de saisie des objet TobjText ne fontionnent plus ni avec
+       gtk ni avec qt ou xt
+ia  4. dialog edit des textes et ellipses
+ia  5. ALL :dialogs  print, export, option print,  option export
+cj  6. packaging binaire debian? ubuntu? archlinux?
+    8. Réimplemter la bibliothèque d'objets de XFIG (bouton dans modepanel + recupérer la
+       bibliothèque.
+   15. driver de sortie SVG
+ia 16. BUG : yfig2dev/yfig2dev ../bateau.fig ../bateau.png 
+   17. Ajouter dans le menu Edit: delete-all
+   18. Ajouter dans le menu View: zoom-in, zoom-out, zoom-to-fit, unzoom
+   19. Creer un menu Windows: toggle-depth-manager, toggle-rulers, toggle-console
+   20. Creer un menu About: 
+   21. GTK: les rulers ne s'adaptent pas immediatement quand on retaille la fenetre YFIG. 
+   21. options dans GTK: -geometry & -gui-font 
+   22. options dans QT:  -geometry x.y & -gui-font 
+   23. Erreur : les raccourcis sont beugés ("m" sur un texte ne marche pas)
+   24. ERREUR : dans le menu d'update des textes, lors ce qu'un texte a été modifié, le bouton "disable preview"
+       fait segfault le logiciel
+
+DONE:
+   14. Qt -> dans la fenêtre d'écriture si on appuye sur entré cela ne valide pas
+       le texte mais on contraire fait un cancel
+    5. régler "save" et "save as" sur QT et XT? et GTK?
+    9. yfig2dev (l'equivalent de fig2dev)
+cj  4. longueur des splines
+cj  5. dans ellipse et les cercles il y a un petit trou

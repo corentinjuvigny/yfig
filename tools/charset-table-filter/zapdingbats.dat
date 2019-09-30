@@ -1,0 +1,297 @@
+# -----------------------------------------------------------
+# Copyright 2002, 2010, 2015 Adobe Systems Incorporated.
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or
+# without modification, are permitted provided that the
+# following conditions are met:
+#
+# Redistributions of source code must retain the above
+# copyright notice, this list of conditions and the following
+# disclaimer.
+#
+# Redistributions in binary form must reproduce the above
+# copyright notice, this list of conditions and the following
+# disclaimer in the documentation and/or other materials
+# provided with the distribution.
+#
+# Neither the name of Adobe Systems Incorporated nor the names
+# of its contributors may be used to endorse or promote
+# products derived from this software without specific prior
+# written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+# CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+# INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+# CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+# NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+# HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# -----------------------------------------------------------
+# Name:          ITC Zapf Dingbats Glyph List
+# Table version: 2.0
+# Date:          September 20, 2002
+# URL:           https://github.com/adobe-type-tools/agl-aglfn
+#
+# Format: two semicolon-delimited fields:
+#   (1) code for pdf encoding 
+#   (2) glyph name--upper/lowercase letters and digits
+#   (3) Unicode scalar value--four uppercase hexadecimal digits
+#
+a100;275E
+a101;2761
+a102;2762
+a103;2763
+a104;2764
+a105;2710
+a106;2765
+a107;2766
+a108;2767
+a109;2660
+a10;2721
+a110;2665
+a111;2666
+a112;2663
+a117;2709
+a118;2708
+a119;2707
+a11;261B
+a120;2460
+a121;2461
+a122;2462
+a123;2463
+a124;2464
+a125;2465
+a126;2466
+a127;2467
+a128;2468
+a129;2469
+a12;261E
+a130;2776
+a131;2777
+a132;2778
+a133;2779
+a134;277A
+a135;277B
+a136;277C
+a137;277D
+a138;277E
+a139;277F
+a13;270C
+a140;2780
+a141;2781
+a142;2782
+a143;2783
+a144;2784
+a145;2785
+a146;2786
+a147;2787
+a148;2788
+a149;2789
+a14;270D
+a150;278A
+a151;278B
+a152;278C
+a153;278D
+a154;278E
+a155;278F
+a156;2790
+a157;2791
+a158;2792
+a159;2793
+a15;270E
+a160;2794
+a161;2192
+a162;27A3
+a163;2194
+a164;2195
+a165;2799
+a166;279B
+a167;279C
+a168;279D
+a169;279E
+a16;270F
+a170;279F
+a171;27A0
+a172;27A1
+a173;27A2
+a174;27A4
+a175;27A5
+a176;27A6
+a177;27A7
+a178;27A8
+a179;27A9
+a17;2711
+a180;27AB
+a181;27AD
+a182;27AF
+a183;27B2
+a184;27B3
+a185;27B5
+a186;27B8
+a187;27BA
+a188;27BB
+a189;27BC
+a18;2712
+a190;27BD
+a191;27BE
+a192;279A
+a193;27AA
+a194;27B6
+a195;27B9
+a196;2798
+a197;27B4
+a198;27B7
+a199;27AC
+a19;2713
+a1;2701
+a200;27AE
+a201;27B1
+a202;2703
+a203;2750
+a204;2752
+a205;276E
+a206;2770
+a20;2714
+a21;2715
+a22;2716
+a23;2717
+a24;2718
+a25;2719
+a26;271A
+a27;271B
+a28;271C
+a29;2722
+a2;2702
+a30;2723
+a31;2724
+a32;2725
+a33;2726
+a34;2727
+a35;2605
+a36;2729
+a37;272A
+a38;272B
+a39;272C
+a3;2704
+a40;272D
+a41;272E
+a42;272F
+a43;2730
+a44;2731
+a45;2732
+a46;2733
+a47;2734
+a48;2735
+a49;2736
+a4;260E
+a50;2737
+a51;2738
+a52;2739
+a53;273A
+a54;273B
+a55;273C
+a56;273D
+a57;273E
+a58;273F
+a59;2740
+a5;2706
+a60;2741
+a61;2742
+a62;2743
+a63;2744
+a64;2745
+a65;2746
+a66;2747
+a67;2748
+a68;2749
+a69;274A
+a6;271D
+a70;274B
+a71;25CF
+a72;274D
+a73;25A0
+a74;274F
+a75;2751
+a76;25B2
+a77;25BC
+a78;25C6
+a79;2756
+a7;271E
+a81;25D7
+a82;2758
+a83;2759
+a84;275A
+a85;276F
+a86;2771
+a87;2772
+a88;2773
+a89;2768
+a8;271F
+a90;2769
+a91;276C
+a92;276D
+a93;276A
+a94;276B
+a95;2774
+a96;2775
+a97;275B
+a98;275C
+a99;275D
+a9;2720
+#END
+#Added to original file by a copy/paste from pdf 1.7 documentation
+I{         } space 040 I{â£   } a30  103 I{â} a65  146 I{â    } a109 253
+I{â} a1    041 I{â¤   } a31  104 I{â} a66  147 I{â    } a120 254
+I{â} a2    042 I{â¥   } a32  105 I{â} a67  150 I{â¡   } a121 255
+I{â} a202  043 I{â¦   } a33  106 I{â} a68  151 I{â¢   } a122 256
+I{â} a3    044 I{â§   } a34  107 I{â} a69  152 I{â£   } a123 257
+I{â} a4    045 I{â} a35  110 I{â} a70  153 I{â¤   } a124 260
+I{â} a5    046 I{â©   } a36  111 I{â} a71  154 I{â¥   } a125 261
+I{â} a119  047 I{âª   } a37  112 I{â} a72  155 I{â¦   } a126 262
+I{â} a118  050 I{â«   } a38  113 I{â    } a73  156 I{â§   } a127 263
+I{â} a117  051 I{â¬   } a39  114 I{â} a74  157 I{â¨   } a128 264
+I{â} a11   052 I{â­   } a40  115 I{â} a203 160 I{â©   } a129 265
+I{â} a12   053 I{â®   } a41  116 I{â} a75  161 I{â¶   } a130 266
+I{â} a13   054 I{â¯   } a42  117 I{â} a204 162 I{â·   } a131 267
+I{â} a14   055 I{â°   } a43  120 I{â²   } a76  163 I{â¸   } a132 270
+I{â} a15   056 I{â±   } a44  121 I{â¼   } a77  164 I{â¹   } a133 271
+I{â} a16   057 I{â²   } a45  122 I{â} a78  165 I{âº   } a134 272
+I{â} a105  060 I{â³   } a46  123 I{â} a79  166 I{â»   } a135 273
+I{â} a17   061 I{â´   } a47  124 I{â} a81  167 I{â¼   } a136 274
+I{â} a18   062 I{âµ   } a48  125 I{â} a82  170 I{â½   } a137 275
+I{â} a19   063 I{â¶   } a49  126 I{â} a83  171 I{â¾   } a138 276
+I{â} a20   064 I{â·   } a50  127 I{â} a84  172 I{â¿   } a139 277
+I{â} a21   065 I{â¸   } a51  130 I{â} a97  173 I{â} a140 300
+I{â} a22   066 I{â¹   } a52  131 I{â} a98  174 I{â} a141 301
+I{â} a23   067 I{âº   } a53  132 I{â} a99  175 I{â} a142 302
+I{â} a24   070 I{â»   } a54  133 I{â} a100 176 I{â} a143 303
+I{â} a25   071 I{â¼   } a55  134 I{â¡   } a101 241 I{â} a144 304
+I{â} a26   072 I{â½   } a56  135 I{â¢   } a102 242 I{â} a145 305
+I{â} a27   073 I{â¾   } a57  136 I{â£   } a103 243 I{â} a146 306
+I{â} a28   074 I{â¿   } a58  137 I{â¤   } a104 244 I{â} a147 307
+I{â} a6    075 I{â} a59  140 I{â¥   } a106 245 I{â} a148 310
+I{â} a7    076 I{â} a60  141 I{â¦   } a107 246 I{â} a149 311
+I{â} a8    077 I{â} a61  142 I{â§   } a108 247 I{â} a150 312
+I{â    } a9    100 I{â} a62  143 I{â£   } a112 250 I{â} a151 313
+I{â¡   } a10   101 I{â} a63  144 I{â¦   } a111 251 I{â} a152 314
+I{â¢   } a29   102 I{â} a64  145 I{â¥   } a110 252 I{â} a153 315
+I{â} a154  316 I{â} a192 332 I{â¦   } a176 346 I{â³   } a184 363
+I{â} a155  317 I{â} a166 333 I{â§   } a177 347 I{â´   } a197 364
+I{â} a156  320 I{â} a167 334 I{â¨   } a178 350 I{âµ   } a185 365
+I{â} a157  321 I{â} a168 335 I{â©   } a179 351 I{â¶   } a194 366
+I{â} a158  322 I{â} a169 336 I{âª   } a193 352 I{â·   } a198 367
+I{â} a159  323 I{â} a170 337 I{â«   } a180 353 I{â¸   } a186 370
+I{â} a160  324 I{â    } a171 340 I{â¬   } a199 354 I{â¹   } a195 371
+I{â} a161  325 I{â¡   } a172 341 I{â­   } a181 355 I{âº   } a187 372
+I{â} a163  326 I{â¢   } a173 342 I{â®   } a200 356 I{â»   } a188 373
+I{â} a164  327 I{â£   } a162 343 I{â¯   } a182 357 I{â¼   } a189 374
+I{â} a196  330 I{â¤   } a174 344 I{â±   } a201 361 I{â½   } a190 375
+I{â} a165  331 I{â¥   } a175 345 I{â²   } a183 362 I{â¾   } a191 376
+#END-END

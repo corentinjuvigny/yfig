@@ -1,0 +1,219 @@
+/* config.h.in:config.h.toappend.  Generated from configure.ac by autoheader.  */
+
+/* indicate if glob feature is either available or not */
+#undef GLOB_AVAILABLE
+
+/* 0/1 the get/setrlimit functions are available/unavailable */
+#undef GSRLIMIT_AVAILABLE
+
+/* Define to 1 if you have the `bzero' function. */
+#undef HAVE_BZERO
+
+/* Define to 1 if you have the declaration of `basename', and to 0 if you
+   don't. */
+#undef HAVE_DECL_BASENAME
+
+/* Define to 1 if you have the declaration of `bzero', and to 0 if you don't.
+   */
+#undef HAVE_DECL_BZERO
+
+/* Define to 1 if you have the declaration of `creat', and to 0 if you don't.
+   */
+#undef HAVE_DECL_CREAT
+
+/* Define to 1 if you have the declaration of `getrlimit', and to 0 if you
+   don't. */
+#undef HAVE_DECL_GETRLIMIT
+
+/* Define to 1 if you have the declaration of `glob', and to 0 if you don't.
+   */
+#undef HAVE_DECL_GLOB
+
+/* Define to 1 if you have the declaration of `globfree', and to 0 if you
+   don't. */
+#undef HAVE_DECL_GLOBFREE
+
+/* Define to 1 if you have the declaration of `index', and to 0 if you don't.
+   */
+#undef HAVE_DECL_INDEX
+
+/* Define to 1 if you have the declaration of `isdigit', and to 0 if you
+   don't. */
+#undef HAVE_DECL_ISDIGIT
+
+/* Define to 1 if you have the declaration of `JCS_BG_RGB', and to 0 if you
+   don't. */
+#undef HAVE_DECL_JCS_BG_RGB
+
+/* Define to 1 if you have the declaration of `JCS_BG_YCC', and to 0 if you
+   don't. */
+#undef HAVE_DECL_JCS_BG_YCC
+
+/* Define to 1 if you have the declaration of `setlocale', and to 0 if you
+   don't. */
+#undef HAVE_DECL_SETLOCALE
+
+/* Define to 1 if you have the declaration of `setrlimit', and to 0 if you
+   don't. */
+#undef HAVE_DECL_SETRLIMIT
+
+/* Define to 1 if you have the declaration of `strdup', and to 0 if you don't.
+   */
+#undef HAVE_DECL_STRDUP
+
+/* Define to 1 if you have the declaration of `time', and to 0 if you don't.
+   */
+#undef HAVE_DECL_TIME
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#undef HAVE_FCNTL_H
+
+/* Define to 1 if you have the `getrlimit' function. */
+#undef HAVE_GETRLIMIT
+
+/* Define to 1 if you have the `glob' function. */
+#undef HAVE_GLOB
+
+/* Define to 1 if you have the `globfree' function. */
+#undef HAVE_GLOBFREE
+
+/* Define to 1 if you have the <glob.h> header file. */
+#undef HAVE_GLOB_H
+
+/* Define if you have the iconv() function and it works. */
+#undef HAVE_ICONV
+
+/* Define to 1 if you have the `index' function. */
+#undef HAVE_INDEX
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the <jpeglib.h> header file. */
+#undef HAVE_JPEGLIB_H
+
+/* Define to 1 if you have the `jpeg_destroy_decompress' function. */
+#undef HAVE_JPEG_DESTROY_DECOMPRESS
+
+/* Define to 1 if you have the `jpeg_read_header' function. */
+#undef HAVE_JPEG_READ_HEADER
+
+/* Define to 1 if you have the `jpeg_std_error' function. */
+#undef HAVE_JPEG_STD_ERROR
+
+/* Define to 1 if you have the <libpng.h> header file. */
+#undef HAVE_LIBPNG_H
+
+/* indicate if locale.h is either available or not */
+#undef HAVE_LOCALE_H
+
+/* Define to 1 if you have the <math.h> header file. */
+#undef HAVE_MATH_H
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* indicate if setlocale function exists and is usable */
+#undef HAVE_SETLOCALE
+
+/* Define to 1 if you have the `setrlimit' function. */
+#undef HAVE_SETRLIMIT
+
+/* Define to 1 if you have the <stdarg.h> header file. */
+#undef HAVE_STDARG_H
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/resource.h> header file. */
+#undef HAVE_SYS_RESOURCE_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* indicate if X11 is either available or not */
+#undef HAVE_X11
+
+/* Define as const if the declaration of iconv() needs const. */
+#undef ICONV_CONST
+
+/* Define to 1 if libjpeg is available */
+#undef LIBJPEG_AVAILABLE
+
+/* Define to 1 if libpng is available */
+#undef LIBPNG_AVAILABLE
+
+/* Name of package */
+#undef PACKAGE
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* indicates if PANGOXFT is available */
+#undef PANGOXFT_AVAILABLE
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Activate features that are dedicated to development. */
+#undef TOOL_DBG_Dev
+
+/* Check memory allocation and freeing of colors. */
+#undef TOOL_DBG_MemClr
+
+/* Check memory allocation and freeing of fonts. */
+#undef TOOL_DBG_MemFnt
+
+/* Check memory allocation and freeing of figure objects. */
+#undef TOOL_DBG_MemObj
+
+/* Activate the TEMP_..._printf macros */
+#undef TOOL_DBG_SpOn
+
+/* Activate the DBG._printf macros */
+#undef TOOL_DBG_Trace
+
+/* set to 1/0 if Target Operating System is/is not Linus */
+#undef TOS_LINUX
+
+/* set to 1/0 if Target Operating System is/is not MinGw */
+#undef TOS_MINGW
+
+/* sets to 1 if the external graphic framework uses X11 */
+#undef USE_X11
+
+/* Version number of package */
+#undef VERSION
+
+/* maximal memory amount in Mb that YFIG can use. */
+#undef YFIG_MemLimitMb

@@ -1,0 +1,10 @@
+#PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
+
+touch ./config.rpath
+touch ./config.h.toappend
+aclocal -I .
+autoheader -I . -f -W all && mv config.h.in\:config.h.toappend config.h.in
+automake --add-missing --foreign --copy
+autoconf
+
+CFLAGS=-g CXXFLAGS=-g ./configure --enable-dbg --disable-qt

@@ -1,0 +1,43 @@
+Memo of debug environment variables
+
+# In tools
+Color : color : Tcolor feature
+
+# In figure
+arc          arc  object
+ellipse      ellipse object
+line         line object
+spline       spline object
+text         text object
+compound     compound object
+search       search object in figure.
+
+# miscellaneous
+      resource     resource handler
+      efsm         finite state machine
+      font         font functions
+GC    gc           gc functions
+      draw         drawing functions
+
+
+# VGUI widget
+_MSlin      : widslin     : slin widget
+_Slout      : widslout    : slout widget
+_Mlout      : widmlout    : mlout widget
+_SPIN       : widspin     : spinner widget
+_Slider     : widslider   : slider widget
+_OUT        : widoutput   : output LVU widget
+_INP        : widinput    : input  LVU widget
+            : buttonpanel : button panel
+            : menu        : menu widgets
+            : canvas      : canvas widget
+            : filebrowser : file browser widget
+
+# VGUI dialog
+_Cdw  : dwcolor : color dialogs: Tvdw_colorSel
+
+# YFIG
+_Dp   : drawparam : Draw Param Panel (DDP)        
+      : bdial     :  GNV dialog <<Get Numeric Value>>
+      : dialomsf  :  OMSF dialog <<Open Merge Save File>>
+

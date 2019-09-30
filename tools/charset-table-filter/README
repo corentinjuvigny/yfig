@@ -1,0 +1,32 @@
+#=========================================================================
+# $Software: YFIG-TOOL (utilities shared by the different modules)
+#       $Id: Makefile.am 100 2017-11-23 07:08:05Z ia $
+#  $HeadURL: svn://lunix120.ensiie.fr/yfig/trunk/tools/Makefile.am $
+#   $Author: Ivan Auge (Email: auge@ensiie.fr)
+#=========================================================================
+# INTODUCTION
+#   Utilities for generating the file ../charset-table-unicodes.c that contains
+#   tables for charset conversion.
+
+#=========================================================================
+# GENERATION of ../charset-table-unicodes.c
+
+ flex f1.lex && gcc -I ../../include lex.yy.c && ./a.out < unicode-html+ps.dat > 1.c
+ flex f2.lex && gcc -I ../../include -I .. lex.yy.c && ./a.out < zapdingbats.dat > 1.c
+ mv 1.c ../charset-table-unicode.c
+
+# notice that "bash README" runs automatically these commands. 
+
+#=========================================================================
+# INPUT DATA
+#   The input files have been picked up on the Internet and more or less
+#   reformated manually to support filters
+#
+#   - unicode-html+ps.dat :
+#       http://www.jdawiseman.com/papers/trivia/character-entities.html
+#   - zapdingbats.dat     : merge of
+#         https://github.com/adobe-type-tools/agl-aglfn/zapfdingbats.txt
+#       and a copy/paste of the zapfdingbats encoding table that I found
+#       in the PDF 1.7 reference manual (Annexe D).
+
+#=========================================================================

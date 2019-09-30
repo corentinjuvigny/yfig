@@ -1,0 +1,70 @@
+#=========================================================================
+# Copyright 2017 Ivan Augé
+#
+# This file is part of the YFIG software.
+# 
+# YFIG is free  software;  you  can redistribute it and/or modify it
+# under the terms of the GNU  General Public License as published by
+# the  Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+# 
+# YFIG software is distributed  in the  hope that it will be useful,
+# but WITHOUT ANY WARRANTY;  without even the  implied  warranty  of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See  the GNU
+# General Public License for more details.
+# 
+# You should have received  a copy of the GNU General Public License
+# along with YFIG. If not, see <http://www.gnu.org/licenses/>.
+#=========================================================================
+# $Software: YFIG-QT (Interface to Qt)
+#       $Id: guiqt.pro.in 148 2018-06-04 06:59:33Z ia $
+#  $HeadURL: http://lunix120.ensiie.fr/yfig/trunk/guiqt/guiqt.pro.in $
+#   $Author: Ivan Auge (Email: auge@ensiie.fr)
+#=========================================================================
+
+TEMPLATE = lib
+TARGET   = guiqt
+DESTDIR  = @YFIG_TOP_OBJDIR@/guiqt
+
+
+QT += widgets
+
+CONFIG  += staticlib
+@YFIG_qt_debug@
+CONFIG  += warn_off
+
+#DEPENDPATH += .
+INCLUDEPATH += ../include/guiqt @YFIG_TOP_SRCDIR@/guiqt @YFIG_TOP_SRCDIR@/include 
+
+# Input
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/guiqt-topform.cc
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/guiqt-top.cc
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/guiqt-init.cc 
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/guiqt-color.cc 
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/guiqt-resources.cc
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/guiqt-util.cc
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/guiqt-create.cc
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/guiqt-dw.cc
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/guiqt-dw-layout.cc
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/guiqt-outdev-vt.cc
+
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/widqt-egs.cc
+HEADERS += @YFIG_TOP_SRCDIR@/guiqt/widqt-simple.h
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/widqt-simple.cc
+HEADERS += @YFIG_TOP_SRCDIR@/guiqt/widqt-simple-spinner.h
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/widqt-simple-spinner.cc
+HEADERS += @YFIG_TOP_SRCDIR@/guiqt/widqt-simple-slin.h
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/widqt-simple-slin.cc
+
+HEADERS += @YFIG_TOP_SRCDIR@/guiqt/widqt-menu.h
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/widqt-menu.cc
+
+HEADERS += @YFIG_TOP_SRCDIR@/guiqt/widqt-filebrowser.h
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/widqt-filebrowser.cc
+
+HEADERS += @YFIG_TOP_SRCDIR@/include/guiqt/widqt-button.h
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/widqt-button.cc
+HEADERS += @YFIG_TOP_SRCDIR@/include/guiqt/widqt-buttonPanel.h
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/widqt-buttonPanel.cc
+SOURCES += @YFIG_TOP_SRCDIR@/guiqt/widqt-canvas.cc
+
